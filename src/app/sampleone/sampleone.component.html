@@ -1,0 +1,34 @@
+<h1>Hello SampleOne</h1> <h2> second type style</h2>
+<h3>Display ngTemplate.</h3>
+<div *ngIf= "door[2] == 'mediumssss'; else priyanka">
+<ul *ngFor= "let allp of allPersons">
+  <li>{{allp.name}} age is: {{allp.age}}</li>
+</ul>
+</div>
+
+<ng-template #priyanka>
+    <ul *ngFor= "let buiding of buidings | keyvalue">
+      
+        <li>Key:{{buiding.key}} and value: {{buiding.value}}</li>
+      </ul>
+      <!-- here appAttdir in attribute directive change the attribute style-->
+<p appAttdir>hi..priya i am else using ng-template using local reference #</p>
+</ng-template>
+
+<p appAdvanceattdir>i am for check attribute directive with hostlistner</p>
+
+
+<input value="testvalue" (keyup)="keyboardkeyup($event)"/>
+   <p>{{num}}</p>
+  <!---- <p>{{top}}</p>  it will print function defination-->
+  <!---- <p>{{objcheck.val}}</p>   -->
+  <p>parent child communication: {{message}}</p>
+  <button (click)="emitevent()">raiseevent</button>
+
+  <input #myinput placeholder="Your favorite pizza toping"> 
+ <!----  <input #myinput (click)="sendRefence()">   -->
+  <div>
+  <ng-content></ng-content>
+</div> 
+
+

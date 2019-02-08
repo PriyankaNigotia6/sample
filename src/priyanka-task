@@ -1,0 +1,38 @@
+Task
+Miscelleneous
+===================
+   AOT and JIT 
+========project setup========
+	◦	Install webstorm/paid
+	✓	Project setup
+	✓	Ngmodel
+	✓	Bootstrap css
+	✓	Root component trace
+	✓	Component selector trace
+========component=========
+	✓	Create component manually Through command
+	✓	Create through cli : never use component in name as it is automatically added by cli
+	✓	Generate sub component in sub folder by mentioning existing component folder name with sub component name
+	✓	Use components
+	✓	Inline template vs template url
+	✓	Add Styles using stylesUrls array
+	✓	Use selector as elements, attributes & class
+========data binding=========
+	✓	Data Binding:
+	✓	String interpolation
+	✓	Property binding
+	✓	Es 6 arrow function
+	✓	Event binding
+	✓	2 way data binding
+	✓	Combining all bindings
+	✓	Ngif & else
+	✓	Ng-templates with local reference also used for else
+	✓	Ngstyles
+	✓	Ngfor
+    =======Debugging=========
+	✓	Breakpoints by DC>Sources>Webpack>.>src
+	✓	Sourcemaps concept
+	✓	Augury
+==Advance Components==DB====
+	✓	Component communication
+         Getter Setter

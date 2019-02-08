@@ -1,0 +1,20 @@
+<h1>i am attribute directive</h1>
+<h2>here border is coing bcoz hostelement property binds with black boder</h2>
+<p appAdvanceattdir>i am for check attribute directive with hostlistner</p>
+<p appAttdir>i am for check simple attribute directive </p>
+<p [appAdvanceattdir] ="attrdircolor">i am checking @input with attr directive</p> 
+<input appAdvanceattdir type="text" value="" placeholder="enter here">
+<div>
+  <input type="radio" name="colors" (click) = "color='red'">red
+  <input type="radio" name="colors" (click)="color='yellow'">Yellow
+  <input type="radio" name="colors" (click)="color='cyan'">Cyan
+</div>
+<p> after clicking hover mouse on highlight me to see effects</p>
+<!---- directive  NAME and attrubute have same name to compress code we can write sepratly also..-->
+<p [appAdvanceattdir]="color">Highlight me!</p>
+<p [appAdvanceattdir]="color" defaultColor="violet">
+    Highlight me too!
+  </p>
+
+  <p *appOwnIf="true" >Own If Condition Working</p>
+

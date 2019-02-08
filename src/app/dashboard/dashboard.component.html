@@ -1,0 +1,47 @@
+
+<h1>  {{title}}</h1>
+<h2 [innerText]='info'></h2>
+
+<span [style.color]='colors'>This span is red.</span>
+<!--getting name from user then display thats two way binding-->
+<input type="text" [(ngModel)]="name" placeholder="Enter name" />
+<button type="submit" (click)="clickMe()">clickMe {{colors}} </button>
+<p>{{name}}</p>
+<div [ngStyle]="{'background-color': mycolor}">
+    <ul *ngIf="car[0] === 'BMW' ">
+        <li *ngFor="let cars of car ; let i = index">
+       {{i+1}} : {{cars}}
+        </li>
+    </ul>
+</div>
+<!--display priyanka 3 times -->
+<div [ngStyle]="{'background-color': colors}">
+    <ul>
+        <li *ngFor="let i of [1,2,3]">
+         priyanka
+        </li>
+    </ul>
+</div>
+
+<div>
+    <ul>
+            <li *ngFor="let obj of Object.keys(objtest)">
+                    Key:{{obj}} and value:{{objtest[obj]}}
+                   </li>
+    <!----in Angular6 using keyvalue pipe ..
+          <li *ngFor="let obj of objtest | keyvalue">
+         Key:{{obj.key}} and value:{{obj.value}} 
+        </li> 
+     -->
+    </ul>
+</div>
+
+<!-- Here [aliasMessage] is property of sampleone component which is here we are usig
+     as custom element and (outdisplay) is custom event -->
+
+<app-sampleone [aliasMessage] = "pmessage" (outdisplay)= "handelevent($event)" >
+    <!--If want to use use any element or value in custom element we have to use ngcontent in that component template whose custom element is this. or can also be use without custom elements also-->
+    <p>hello i am in p of sampleone declared in dashboard..</p>
+</app-sampleone>
+
+
